@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Meta tags básicas -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfolio</title>
+  <!--
+    - script-Contact
+  -->
+  <script src="assets/js/contact-script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("b_zHi-UhjsqE8V6-i");
+    })();
+  </script>
+
+  <!--
+    - favicon
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="shortcut icon" href="./assets/images/avatar.svg">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar.svg" alt="claramente-eu" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Pedro Lucas Moreira">Pedro Lucas Moreira</h1>
+
+          <p class="title">Software Dev.</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Mais contatos</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:pedsromoreira@gmail.com" class="contact-link">pedsromoreira@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="document-attach-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Currículo</p>
+
+              <a href="assets/docs/curriculo.pdf" class="contact-link">Acesse aqui</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Aniversário</p>
+
+              <time datetime="1982-06-23">Maio 28, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Localização</p>
+
+              <address>Rio de Janeiro, RJ, Brasil</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/powerandcontrol" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/dojaincel/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/pedro-lucas-moreira-706675256/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Sobre</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Carreira</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projetos</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="sobre">
+
+        <header>
+          <h2 class="h2 article-title">Sobre mim</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Profissional de tecnologia em formação, cursando Bacharelado em Sistemas de Informação pela UNIRIO, com
+            formação técnica em Desenvolvimento de Sistemas. Tenho experiência sólida em análise de dados, BI e
+            desenvolvimento mobile com Java e React Native. Atuei na criação de dashboards, desenvolvimento web com
+            Flask e Django, além de APIs. Como monitor de Introdução à Computação, ajudei estudantes a dominar Python e
+            lógica de programação. Sempre em busca de desafios, sou proficiente em Python, SQL, Power BI, Git e
+            tecnologias web como HTML, CSS e JavaScript.
+          </p>
+
+        </section>
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">O que eu faço ?</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/bi.png
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Dashboards</h4>
+
+                <p class="service-item-text">
+                  Faço Dashboards em Power BI para exibição e análise de dados.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/development.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  Desenvolvimento de sites de alta qualidade.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/smartphone.png" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Desenvolvimento de aplicações básicas para Mobile.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/api.png" alt="api icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">APIs</h4>
+
+                <p class="service-item-text">
+                  Desenvolvimento e integração de APIs para otimizar a comunicação entre sistemas.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </section>
+
+        </div>
+
+      </article>
+
+      <!--
+        - #CARREIRA
+      -->
+
+      <article class="carreira" data-page="carreira">
+
+        <header>
+          <h2 class="h2 article-title">Carreira</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Educação</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Universidade Federal do Estado do Rio de Janeiro</h4>
+
+              <span>2021 — Atual</span>
+
+              <p class="timeline-text">
+                Formando em Bacharelado em Sistemas de Informação pela Universidade Federal do Estado do Rio de Janeiro.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Colégio Pedro II, Rio de Janeiro</h4>
+
+              <span>2018 — 2021</span>
+
+              <p class="timeline-text">
+                Técnico em Desenvolvimento de Sistemas pelo Colégio Pedro II, Campus São Cristóvão.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="git-merge-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiência</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Estágio em Análise de Dados, TCE-RJ</h4>
+
+              <span>2024 — presente</span>
+
+              <p class="timeline-text">
+                Experiência no desenvolvimento de soluções de Business Intelligence (BI), utilizando Python para análise
+                de dados, e bibliotecas como Pandas e outras ferramentas analíticas. Atuei na criação e exibição de
+                relatórios, além de dashboards e gráficos informativos. Além disso, atuei no desenvolvimento web
+                utilizando frameworks como Django, bem como no estudo e desenvolvimento de APIs. Todo o código
+                gerenciado de forma eficiente com Git e Github, garantindo controle de versão e colaboração eficaz.
+              </p>
+
+              <div class="tags">
+                <div class="badge"><i class="fa-solid fa-code"></i> C#</div>
+                <div class="badge"><i class="fa-solid fa-chart-line"></i> Power BI</div>
+                <div class="badge"><i class="fa-solid fa-database"></i> SQL</div>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Assistente de Ensino, UNIRIO</h4>
+
+              <span>2024, 2025 Julho — presente</span>
+
+              <p class="timeline-text">
+                Monitor de Introdução à Computação no Curso de Matemática, auxiliando no aprendizado de programação
+                utilizando Python e conceitos lógicos.
+              </p>
+
+              <div class="tags">
+                <div class="badge"><i class="fa-brands fa-python"></i> Python</div>
+                <div class="badge"><i class="fa-solid fa-brain"></i> Lógica Computacional</div>
+              </div>
+
+            </li>
+
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Desenvolvedor Mobile</h4>
+
+              <span>2023 — presente</span>
+
+              <p class="timeline-text">
+                Desenvolvimento mobile em Java e React Native, com experiência no Android Studio e banco de dados com
+                SQL.
+              </p>
+
+              <div class="tags">
+                <div class="badge"><i class="fa-brands fa-react"></i> React Native</div>
+                <div class="badge"><i class="fa-brands fa-android"></i> Android Studio</div>
+                <div class="badge"><i class="fa-solid fa-database"></i> SQL</div>
+              </div>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Estágio de Desenvolvimento, Colégio Pedro II</h4>
+
+              <span>2019</span>
+
+              <p class="timeline-text">
+                Estágio no desenvolvimento de Sistema de Controle de Entrada e Saída de Alunos para o Câmpus São
+                Cristóvão III, envolvendo organização e implementação do banco de dados, desenvolvimento do sistema com
+                C#; edição e tratamento de imagens de alunos.
+              </p>
+
+              <div class="tags">
+                <div class="badge"><i class="fa-solid fa-code"></i> C#</div>
+                <div class="badge"><i class="fa-solid fa-chart-line"></i> Power BI</div>
+                <div class="badge"><i class="fa-solid fa-database"></i> SQL</div>
+              </div>
+
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Tecnologias</h3>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Python (incluindo Pandas, NumPy e Matplotlib)</h4>
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">HTML, CSS e JavaScript</h4>
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Power BI</h4>
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SQL Server/MYSQL</h4>
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">C/C# </h4>
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Desenvolvimento Mobile</h4>
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Git e GitHub</h4>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Pacote Office</h4>
+            </li>
+          </ol>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="projetos">
+
+        <header>
+          <h2 class="h2 article-title">Projetos</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Todos</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Dashboards</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Aplicações</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web and Mobile development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Todos</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Todos</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Dashboards</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Aplicações</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web and Mobile development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="aplicações" >
+              <a target="_blank" href="./assets/docs/pncp.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pncp.png" alt="crud" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">PNCP</h3> 
+
+                <p class="project-category">Aplicação</p>  
+    
+              </a>
+              <a href="https://github.com/powerandcontrol/PNCP">
+                <div class="tags">
+                  <div class="badge"><i class="fa-brands fa-github"></i>Código </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="dashboards">
+              <a target="_blank" href="./assets/docs/inea.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/inea.png" alt="Netflix" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Dashboard INEA</h3>
+
+                <p class="project-category">Dashboard</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="dashboards">
+              <a target="_blank" href="./assets/docs/censo.pdf">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/mapacenso.png" alt="Netflix" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Dashboard Mapa Censo Escolar</h3>
+
+                <p class="project-category">Dashboard</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="aplicações">
+              <a target="_blank" href="">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/player.png" alt="pokedex" loading="lazy">
+                </figure>
+                
+                <h3 class="project-title">Mp3 Player</h3>
+
+                <p class="project-category">Aplicação</p>
+                  <a href="https://github.com/powerandcontrol/MP4-em-Python">
+                    <div class="tags">
+                      <div class="badge"><i class="fa-brands fa-github"></i>Código </div>
+                    </div>
+                  </a>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="dashboards">
+              <a target="_blank" href="./assets/images/ibge.png">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ibge.png" alt="login-register" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Dashboard IBGE</h3>
+
+                <p class="project-category">Dashboard</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
